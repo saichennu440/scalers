@@ -2,15 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Mobile Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scalers Agency Style Website</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+
+    <!-- SEO Meta -->
+    <title>Scalers Business Agency</title>
+    <meta
+      name="description"
+      content="Scalers – A modern business agency offering web development, branding, marketing, and digital transformation services."
+    />
+
+    <!-- Preload Root Script -->
+    <link rel="preload" href="/src/main.tsx" as="script" />
+
+    <!-- Prevent White Flash on Dark Mode -->
+    <style>
+      html.dark {
+        background-color: #0a0a0a;
+      }
+    </style>
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- Main entry point -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
